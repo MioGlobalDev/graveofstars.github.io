@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #password-form {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="password-form">
+        <h2>Please enter the password:</h2>
+        <input type="password" id="password-input">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+    <div id="content">
+        <h2>Welcome!</h2>
+        <p>This is the hidden content that will be revealed after entering the correct password.</p>
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('password-input').value;
+
+            // Replace 'your_password_here' with your desired password
+            if (password === 'your_password_here') {
+                document.getElementById('password-form').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+    </script>
+</body>
+
+</html>
