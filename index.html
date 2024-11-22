@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Protected Page</title>
+    <title>穹顶之下</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,15 +26,14 @@
 
 <body>
     <div id="password-form">
-        <h2>Please enter the password:</h2>
+        <h2>请输入启示的密码:</h2>
         <input type="password" id="password-input">
-        <button onclick="checkPassword()">Submit</button>
+        <img src="https://img520.com/B32wea.png" alt="Password Hint Image" style="display: block; margin: 0 auto; max-width: 100%;">
+        <button onclick="checkPassword()">提交</button>
     </div>
 
     <div id="content">
-        <h2>摸了</h2>
-        <p>就这个摸鱼爽</p>
-        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        <h2>你破解了启示</h2>
     </div>
 
     <script>
@@ -42,11 +41,11 @@
             var password = document.getElementById('password-input').value;
 
             // Replace 'your_password_here' with your desired password
-            if (password === '114514') {
+            if (password === '365161') {
                 document.getElementById('password-form').style.display = 'none';
                 document.getElementById('content').style.display = 'block';
             } else {
-                alert('Incorrect password. Please try again.');
+                alert('密码错误，请重试。');
             }
         }
     </script>
